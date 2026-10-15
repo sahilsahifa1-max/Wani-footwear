@@ -2,11 +2,11 @@ import { AboutImageConfig } from '../types/index.ts';
 
 /**
  * ============================================================================
- * VANI FOOTWEAR — ABOUT PAGE IMAGE CONFIGURATION
+ * WANI FOOTWEAR — ABOUT PAGE IMAGE CONFIGURATION
  * ============================================================================
  * 
- * Store Owner: Bilal Ahmed Vani
- * Store Location: Kanewan, Jammu & Kashmir, India
+ * Store Owner: Bilal Wani
+ * Store Location: Kanelwan, Jammu & Kashmir, India
  * 
  * INSTRUCTIONS FOR OWNER / ADMIN:
  * To use your real store and team photography, replace the URL strings below with
@@ -18,11 +18,11 @@ import { AboutImageConfig } from '../types/index.ts';
  */
 
 export const aboutImages: AboutImageConfig = {
-  // 1. Portrait of the store founder: Bilal Ahmed Vani
-  // Replace with high-resolution photo of Bilal Ahmed Vani at the Kanewan store.
+  // 1. Portrait of the store founder: Bilal Wani
+  // Replace with high-resolution photo of Bilal Wani at the Kanelwan store.
   ownerPortrait: "",
 
-  // 2. Exterior view of Vani Footwear storefront in Kanewan, J&K
+  // 2. Exterior view of Wani Footwear storefront in Kanelwan, J&K
   storefront: "",
 
   // 3. Interior view showing organized shoe displays and customer seating

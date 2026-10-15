@@ -193,10 +193,10 @@ export const ShoeCanvas3D: React.FC<ShoeCanvas3DProps> = ({
         ctx.stroke();
       }
 
-      // Vani Brand Mark on Sneaker Heel
+      // Wani Brand Mark on Sneaker Heel
       ctx.fillStyle = '#FFFFFF';
       ctx.font = 'bold 11px "Space Grotesk", sans-serif';
-      ctx.fillText('VANI', heelX + 15, heelY - 20);
+      ctx.fillText('WANI', heelX + 15, heelY - 20);
 
       ctx.restore();
 

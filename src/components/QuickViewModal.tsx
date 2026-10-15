@@ -82,7 +82,21 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
             }}
           />
           <div className="relative w-full aspect-square flex items-center justify-center p-4">
-            <ShoeSilhouette category={product.category} accentColor={accentColor} />
+            {product.images && product.images.length > 0 ? (
+              <img
+                src={product.images[0]}
+                alt={product.name}
+                className="w-full h-full object-contain filter drop-shadow-xl"
+                onError={(e) => {
+                  (e.currentTarget as HTMLElement).style.display = 'none';
+                  const fallback = (e.currentTarget.parentElement as HTMLElement)?.querySelector('.quickview-fallback');
+                  if (fallback) (fallback as HTMLElement).style.display = 'block';
+                }}
+              />
+            ) : null}
+            <div className={`w-full h-full ${product.images && product.images.length > 0 ? 'quickview-fallback hidden' : 'block'}`}>
+              <ShoeSilhouette category={product.category} accentColor={accentColor} />
+            </div>
           </div>
           <div className="mt-4 flex items-center gap-2 text-xs font-mono text-zinc-400">
             <Sparkles className="w-3.5 h-3.5 text-[#F5F000]" />

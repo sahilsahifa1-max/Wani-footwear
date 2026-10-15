@@ -5,8 +5,8 @@ import type { CartItem } from '../types/index.ts';
 
 const mockProduct = {
   id: 'vf-101',
-  name: 'Vani Velocity Pro Runner',
-  slug: 'vani-velocity-pro-runner',
+  name: 'Wani Velocity Pro Runner',
+  slug: 'wani-velocity-pro-runner',
   tagline: 'Precision engineered running silhouette',
   description: 'Breathable lightweight runner with high rebound sole.',
   price: 1899,

@@ -63,10 +63,10 @@ export const ContactView: React.FC = () => {
           Store & Contact Information
         </span>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-zinc-900 tracking-tight">
-          Visit Vani Footwear
+          Visit Wani Footwear
         </h1>
         <p className="text-sm sm:text-base text-zinc-600">
-          Located in Main Market Kanewan, Jammu & Kashmir. Open every day from 8:00 AM to 8:00 PM.
+          Located in Main Market Kanelwan, Jammu & Kashmir. Open every day from 8:00 AM to 8:00 PM.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export const ContactView: React.FC = () => {
           {/* Store Info Card */}
           <div className="bg-white p-6 sm:p-8 rounded-3xl border border-zinc-200/90 shadow-sm space-y-6">
             <h2 className="text-xl font-bold font-display text-zinc-900">
-              Kanewan Store Details
+              Kanelwan Store Details
             </h2>
 
             <div className="space-y-4 text-sm">
@@ -117,7 +117,7 @@ export const ContactView: React.FC = () => {
                     className="text-emerald-600 text-xs font-semibold flex items-center gap-1 mt-0.5 hover:underline"
                   >
                     <MessageSquare className="w-3.5 h-3.5" />
-                    <span>Chat with Bilal Ahmed Vani on WhatsApp</span>
+                    <span>Chat with Bilal Ahmed Wani on WhatsApp</span>
                   </a>
                 </div>
               </div>
@@ -161,12 +161,12 @@ export const ContactView: React.FC = () => {
           {/* Interactive Map Embed */}
           <div className="bg-white rounded-3xl overflow-hidden border border-zinc-200/90 shadow-sm">
             <div className="p-4 border-b border-zinc-100 flex items-center justify-between text-xs font-mono text-zinc-500">
-              <span>Kanewan, Jammu & Kashmir</span>
+              <span>Kanelwan, Jammu & Kashmir</span>
               <span className="text-emerald-600 font-bold">Open Today 8:00 AM – 8:00 PM</span>
             </div>
             <div className="w-full h-64 bg-zinc-200">
               <iframe
-                title="Vani Footwear Kanewan Location Map"
+                title="Wani Footwear Kanelwan Location Map"
                 src={STORE_INFO.location.embedMapSrc}
                 width="100%"
                 height="100%"
@@ -182,10 +182,10 @@ export const ContactView: React.FC = () => {
         <div className="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl border border-zinc-200/90 shadow-sm space-y-6">
           <div className="space-y-1">
             <h2 className="text-xl font-bold font-display text-zinc-900">
-              Send a Message to Bilal Ahmed Vani
+              Send a Message to Bilal Ahmed Wani
             </h2>
             <p className="text-xs text-zinc-500">
-              Ask about shoe availability, custom size orders, school bulk orders, or Kanewan store pickup.
+              Ask about shoe availability, custom size orders, school bulk orders, or Kanelwan store pickup.
             </p>
           </div>
 
@@ -193,7 +193,7 @@ export const ContactView: React.FC = () => {
             <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2.5 animate-in fade-in">
               <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
               <span>
-                Thank you! Your message has been received by Vani Footwear. We will respond promptly by phone or email.
+                Thank you! Your message has been received by Wani Footwear. We will respond promptly by phone or email.
               </span>
             </div>
           )}
@@ -243,7 +243,7 @@ export const ContactView: React.FC = () => {
               </label>
               <input
                 type="text"
-                placeholder="e.g. Size availability for Vani Velocity Pro Runner"
+                placeholder="e.g. Size availability for Wani Velocity Pro Runner"
                 value={form.subject}
                 onChange={(e) => {
                   setForm({ ...form, subject: e.target.value });

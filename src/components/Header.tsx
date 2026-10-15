@@ -51,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="text-zinc-400 hidden sm:inline">{STORE_INFO.hours.display}</span>
           </div>
           <div className="flex items-center gap-4 text-xs font-mono">
-            <span className="hidden md:inline text-zinc-400">Free Kanewan Store Pickup · 100% Genuine Quality</span>
+            <span className="hidden md:inline text-zinc-400">Free Kanelwan Store Pickup · 100% Genuine Quality</span>
             <button
               onClick={onOpenAdmin}
               className="text-[#F5F000] hover:underline flex items-center gap-1 font-sans text-xs cursor-pointer"
@@ -74,7 +74,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-2 text-left cursor-pointer group whitespace-nowrap shrink-0"
           >
             <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#171717] font-display uppercase group-hover:text-black transition-colors">
-              Vani<span className="text-[#171717]">.</span><span className="bg-[#F5F000] text-[#171717] px-1.5 ml-0.5 rounded-sm">Footwear</span>
+              Wani<span className="text-[#171717]">.</span><span className="bg-[#F5F000] text-[#171717] px-1.5 ml-0.5 rounded-sm">Footwear</span>
             </span>
           </button>
 
@@ -180,11 +180,11 @@ export const Header: React.FC<HeaderProps> = ({
                 className="text-left text-sm font-medium text-zinc-500 py-2 flex items-center gap-2"
               >
                 <ShieldCheck className="w-4 h-4 text-[#171717]" />
-                <span>Bilal Ahmed Vani Store Management</span>
+                <span>Bilal Ahmed Wani Store Management</span>
               </button>
             </div>
             <div className="pt-4 border-t border-zinc-200 text-xs text-zinc-500 flex justify-between">
-              <span>Kanewan, J&K</span>
+              <span>Kanelwan, J&K</span>
               <span>8 AM – 8 PM</span>
             </div>
           </div>

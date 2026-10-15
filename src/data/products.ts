@@ -4,8 +4,8 @@ export const INITIAL_PRODUCTS: Product[] = [
   // --- MEN'S COLLECTION ---
   {
     id: 'vf-men-01',
-    name: 'Vani Velocity Pro Runner',
-    slug: 'vani-velocity-pro-runner',
+    name: 'Wani Velocity Pro Runner',
+    slug: 'wani-velocity-pro-runner',
     tagline: 'Ultralight responsive marathon & training shoe',
     description: 'Engineered for high-mileage runs and daily road training. Features breathable dual-knit mesh upper, responsive carbon-infused EVA rebound midsole, and high-abrasion rubber traction pads.',
     price: 2499,
@@ -27,7 +27,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Engineered High-Flex Knit Upper',
     sole: 'Dual-Density Rebound EVA Foam & Carbon Rubber',
     careInstructions: 'Wipe with damp cloth; dry naturally in shade away from direct heat.',
-    images: [],
+    images: ['/assets/products/361afa2f63b74357103c95302098da0f.jpg'],
     badge: 'Flagship'
   },
   {
@@ -53,7 +53,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Top-Grain Pull-Up Leather',
     sole: 'Goodyear-Style Welted Lug Rubber Outsole',
     careInstructions: 'Nourish with wax polish or natural leather conditioner monthly.',
-    images: [],
+    images: ['/assets/products/3045a0f33658f7d076f57b3ae00b3c30.jpg'],
     badge: 'Handcrafted'
   },
   {
@@ -79,7 +79,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Microfiber Suede & Breathable Mesh Paneling',
     sole: 'Lightweight Phylon Cushion Platform Sole',
     careInstructions: 'Spot clean suede with soft nylon brush.',
-    images: []
+    images: ['/assets/products/da50fb90d50733cb18b616a5541b81c0.jpg']
   },
   {
     id: 'vf-men-04',
@@ -102,7 +102,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Premium Synthetic Vegan Box Calf',
     sole: 'German Thermo Plastic Rubber (TPR) Anti-Skid Sole',
     careInstructions: 'Buff with instant shine sponge before events.',
-    images: []
+    images: ['/assets/products/3f7de22f55e1d1e0e414345385e26c81.jpg']
   },
   {
     id: 'vf-men-05',
@@ -125,7 +125,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Supple Vegetable-Tanned Leather Upper',
     sole: 'Flexible Leather Composite Sole',
     careInstructions: 'Store in cotton dust bag; avoid moisture.',
-    images: []
+    images: ['/assets/products/c9af3133613f928273c7ca293424c166.jpg']
   },
   {
     id: 'vf-men-06',
@@ -148,7 +148,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Waterproof Hydrophobic Nubuck & Ripstop Cordura',
     sole: 'High-Traction Deep-Lug Vibram-Style Rubber',
     careInstructions: 'Rinse dried mud with cold water; air dry in ventilated area.',
-    images: []
+    images: ['/assets/products/2ac4f35d85a302d7cfa1f45a3828dabd.jpg']
   },
   {
     id: 'vf-men-07',
@@ -173,14 +173,14 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'High-Density Injected EVA',
     sole: 'Textured Non-Slip Grooved Footbed',
     careInstructions: 'Wash with mild soapy water and wipe dry.',
-    images: []
+    images: ['/assets/products/925dd47bf0cf7c6d3dc6b0928675dd0d.jpg']
   },
 
   // --- WOMEN'S COLLECTION ---
   {
     id: 'vf-women-01',
-    name: 'Vani Zenith Women’s Active Sneaker',
-    slug: 'vani-zenith-womens-active-sneaker',
+    name: 'Wani Zenith Women’s Active Sneaker',
+    slug: 'wani-zenith-womens-active-sneaker',
     tagline: 'Featherlight walking & running shoe with heel cushioning',
     description: 'Tailored for women seeking cloud-like step comfort throughout busy days. Engineered stretch upper contours to foot shape without pressure points.',
     price: 1999,
@@ -201,7 +201,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Engineered Breathable Mesh & Neoprene Lining',
     sole: 'Ultra-Cushioned Air-Pillow EVA Midsole',
     careInstructions: 'Machine washable on gentle cycle inside a wash bag.',
-    images: [],
+    images: ['/assets/products/36b138d5a76003c00b397d73b422d8e2.jpg'],
     badge: 'Best Seller'
   },
   {
@@ -227,7 +227,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Premium Velvet with Embroidered Metallic Threadwork',
     sole: 'Anti-Skid Sheet Sole with 2.5 Inch Balanced Heel',
     careInstructions: 'Brush lightly with a soft bristle brush; avoid rain and puddles.',
-    images: []
+    images: ['/assets/products/f37e354af1881d57732c3a8037bc1fee.jpg']
   },
   {
     id: 'vf-women-03',
@@ -251,7 +251,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Ultra-Soft Flex PU Leather',
     sole: 'Natural Rubber Flex Sole',
     careInstructions: 'Wipe clean with a damp microfiber cloth.',
-    images: []
+    images: ['/assets/products/9dbedb3df7ea43ef3afff88a62d153f6.jpg']
   },
   {
     id: 'vf-women-04',
@@ -274,7 +274,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Treated Water-Resistant Suede & Thermal Sherpa Lining',
     sole: 'Anti-Slip Grip Thermoplastic Outsole',
     careInstructions: 'Apply water-repellent spray seasonally.',
-    images: []
+    images: ['/assets/products/c24af445952efca0f105102d8c6fc5e4.jpg']
   },
   {
     id: 'vf-women-05',
@@ -299,14 +299,14 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Skin-Friendly Soft Synthetic Straps with Micro-Fleece Backing',
     sole: 'Dual-Layer Contoured Footbed & Non-Marking Sole',
     careInstructions: 'Rinse with clear water and allow to dry in shade.',
-    images: []
+    images: ['/assets/products/dc5434cce59600a0cee5325ab34b186e.jpg']
   },
 
   // --- BABIES & TODDLERS ---
   {
     id: 'vf-baby-01',
-    name: 'Vani First-Steps Soft-Soled Pre-Walker',
-    slug: 'vani-first-steps-soft-soled-pre-walker',
+    name: 'Wani First-Steps Soft-Soled Pre-Walker',
+    slug: 'wani-first-steps-soft-soled-pre-walker',
     tagline: 'Gentle, flexible foot protection for early explorers',
     description: 'Crafted with genuine soft leather and flexible suede sole to allow infant foot muscles to develop naturally without constriction. Wide toe box allows tiny toes to splay.',
     price: 799,
@@ -326,7 +326,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Non-Toxic Ultra-Soft Breathable Baby-Safe Leather',
     sole: 'Soft Suede Non-Slip Natural Grip Sole',
     careInstructions: 'Spot clean with baby-safe soap and dry towel.',
-    images: []
+    images: ['/assets/products/aa8820af327d930ac3bcd8f1a1f80345.jpg']
   },
   {
     id: 'vf-baby-02',
@@ -349,7 +349,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Wipeable Synthetic Leather & Padded Breathable Collar',
     sole: 'Super-Flex Featherlight EVA Foam Sole',
     careInstructions: 'Wipe with baby wipe or damp cloth.',
-    images: []
+    images: ['/assets/products/d3a0f75cda5f5e08d73d80edeafbe7ba.jpg']
   },
   {
     id: 'vf-baby-03',
@@ -378,8 +378,8 @@ export const INITIAL_PRODUCTS: Product[] = [
   // --- KIDS' COLLECTION ---
   {
     id: 'vf-kids-01',
-    name: 'Vani Scholar All-Weather School Shoe',
-    slug: 'vani-scholar-all-weather-school-shoe',
+    name: 'Wani Scholar All-Weather School Shoe',
+    slug: 'wani-scholar-all-weather-school-shoe',
     tagline: 'Scuff-resistant uniform shoe with reinforced toe',
     description: 'Built to withstand school playgrounds, assemblies, and daily commutes. High-density scuff-resistant material with cushioned anti-bacterial insole.',
     price: 1099,
@@ -398,7 +398,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Heavy-Duty Scuff-Tuff Synthetic Leather',
     sole: 'Durable Non-Marking Polyurethane (PU) Sole',
     careInstructions: 'Polish regularly with black shoe cream or damp sponge.',
-    images: [],
+    images: ['/assets/products/44a132b69544058f90c65d4173a93537.jpg'],
     badge: 'School Special'
   },
   {
@@ -429,8 +429,8 @@ export const INITIAL_PRODUCTS: Product[] = [
   // --- SENIOR CITIZENS & COMFORT ---
   {
     id: 'vf-senior-01',
-    name: 'Vani GentleStep Easy-Fit Walking Shoe',
-    slug: 'vani-gentlestep-easy-fit-walking-shoe',
+    name: 'Wani GentleStep Easy-Fit Walking Shoe',
+    slug: 'wani-gentlestep-easy-fit-walking-shoe',
     tagline: 'Zero-pressure hands-free slip-on with wide toe box',
     description: 'Thoughtfully designed for senior citizens, individuals with diabetes, or anyone seeking gentle foot relief. Seamless interior lining eliminates friction and blisters. Easy hands-free step in.',
     price: 1799,
@@ -451,7 +451,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     material: 'Elastic 4-Way Stretch Mesh with Memory Cushion Lining',
     sole: 'Shock-Absorbing Rocker Rubber Sole for Effortless Walking',
     careInstructions: 'Machine washable on cold gentle cycle.',
-    images: [],
+    images: ['/assets/products/9c8dc4ce40dae045997e44836a73047b.jpg'],
     badge: 'Senior Comfort'
   },
   {
@@ -481,8 +481,8 @@ export const INITIAL_PRODUCTS: Product[] = [
   // --- UNIVERSAL EVERYDAY ESSENTIALS ---
   {
     id: 'vf-univ-01',
-    name: 'Vani DuraStep Family House Slipper',
-    slug: 'vani-durastep-family-house-slipper',
+    name: 'Wani DuraStep Family House Slipper',
+    slug: 'wani-durastep-family-house-slipper',
     tagline: 'Durable, waterproof, and budget-friendly household footwear',
     description: 'The trusted everyday slipper for every Kashmiri home. Long-lasting flexible strap, textured footbed for wet bathroom safety, and unmatched durability.',
     price: 399,

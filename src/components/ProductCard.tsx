@@ -51,9 +51,25 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     >
       {/* Media Canvas Area (Leading with 65-75% imagery on neutral backdrop) */}
       <div className="relative w-full aspect-[4/3] bg-zinc-100 flex items-center justify-center p-6 overflow-hidden">
-        {/* Subtle Category Silhouette or Render */}
+        {/* Real Product Image with Fallback Silhouette */}
         <div className="w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out flex items-center justify-center">
-          <ShoeSilhouette category={product.category} accentColor={activeAccentHex} />
+          {product.images && product.images.length > 0 ? (
+            <img
+              src={product.images[0]}
+              alt={product.name}
+              className="w-full h-full object-contain filter drop-shadow-md"
+              loading="lazy"
+              onError={(e) => {
+                // Hide image if file not yet uploaded and show vector silhouette
+                (e.currentTarget as HTMLElement).style.display = 'none';
+                const fallback = (e.currentTarget.parentElement as HTMLElement)?.querySelector('.silhouette-fallback');
+                if (fallback) (fallback as HTMLElement).style.display = 'block';
+              }}
+            />
+          ) : null}
+          <div className={`w-full h-full ${product.images && product.images.length > 0 ? 'silhouette-fallback hidden' : 'block'}`}>
+            <ShoeSilhouette category={product.category} accentColor={activeAccentHex} />
+          </div>
         </div>
 
         {/* Badges / Text kicker (Quiet, no pill sandwiches) */}

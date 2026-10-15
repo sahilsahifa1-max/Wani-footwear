@@ -19,8 +19,8 @@ test('Indian phone validation: recognizes valid mobile formats', () => {
   assert.equal(isValidIndianPhone(''), false);
 });
 
-test('Indian pincode validation: Kanewan 192124 and standard 6 digits', () => {
-  assert.equal(isValidIndianPincode('192124'), true); // Kanewan
+test('Indian pincode validation: Kanelwan 192124 and standard 6 digits', () => {
+  assert.equal(isValidIndianPincode('192124'), true); // Kanelwan
   assert.equal(isValidIndianPincode('190001'), true); // Srinagar
   assert.equal(isValidIndianPincode('092124'), false); // cannot start with 0
   assert.equal(isValidIndianPincode('19212'), false); // 5 digits
@@ -28,10 +28,10 @@ test('Indian pincode validation: Kanewan 192124 and standard 6 digits', () => {
   assert.equal(isValidIndianPincode('abc123'), false);
 });
 
-test('Order ID generation follows VF-YEAR-XXXX pattern', () => {
+test('Order ID generation follows WF-YEAR-XXXX pattern', () => {
   const id = generateOrderId();
   const year = new Date().getFullYear();
-  assert.match(id, new RegExp(`^VF-${year}-\\d{4}$`));
+  assert.match(id, new RegExp(`^WF-${year}-\\d{4}$`));
 });
 
 test('Order status state machine transitions', () => {

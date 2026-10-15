@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <div className="text-xs text-zinc-400 mt-0.5">Infants to Seniors</div>
               </div>
               <div>
-                <div className="text-2xl font-bold font-display text-white tabular-nums">Kanewan</div>
+                <div className="text-2xl font-bold font-display text-white tabular-nums">Kanelwan</div>
                 <div className="text-xs text-zinc-400 mt-0.5">Daily 8 AM–8 PM</div>
               </div>
             </div>
@@ -115,7 +115,7 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="mt-4 flex items-center justify-between text-xs text-zinc-400 font-mono px-2">
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-[#F5F000]" />
-                Featured: Vani Velocity Pro Runner
+                Featured: Wani Velocity Pro Runner
               </span>
               <span>Available in UK 6–11</span>
             </div>

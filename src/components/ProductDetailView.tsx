@@ -100,7 +100,21 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
             />
 
             <div className="relative w-full h-full flex items-center justify-center z-10">
-              <ShoeSilhouette category={product.category} accentColor={accentColor} />
+              {product.images && product.images.length > 0 ? (
+                <img
+                  src={product.images[0]}
+                  alt={product.name}
+                  className="w-full h-full object-contain filter drop-shadow-xl"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLElement).style.display = 'none';
+                    const fallback = (e.currentTarget.parentElement as HTMLElement)?.querySelector('.silhouette-pdp-fallback');
+                    if (fallback) (fallback as HTMLElement).style.display = 'block';
+                  }}
+                />
+              ) : null}
+              <div className={`w-full h-full ${product.images && product.images.length > 0 ? 'silhouette-pdp-fallback hidden' : 'block'}`}>
+                <ShoeSilhouette category={product.category} accentColor={accentColor} />
+              </div>
             </div>
 
             {/* Badges */}
@@ -195,7 +209,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
                   activeTab === 'delivery' ? 'text-[#171717] font-bold' : 'text-zinc-500 hover:text-black'
                 }`}
               >
-                Kanewan Pickup & Shipping
+                Kanelwan Pickup & Shipping
                 {activeTab === 'delivery' && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#F5F000]" />}
               </button>
             </div>
@@ -236,7 +250,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
               {activeTab === 'delivery' && (
                 <div className="space-y-3">
                   <p className="font-semibold text-zinc-900">
-                    Same-Day Pickup at Kanewan Store (8 AM – 8 PM): Free
+                    Same-Day Pickup at Kanelwan Store (8 AM – 8 PM): Free
                   </p>
                   <p>
                     Local Kashmir Valley Delivery: ₹49 (Free on orders above ₹999). Usually delivered in 1–2 days.
@@ -245,7 +259,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
                     Pan-India Shipping: ₹99 (Free on orders above ₹1,499).
                   </p>
                   <p className="text-xs text-zinc-500">
-                    All orders are inspected and boxed at our Main Market Kanewan store by Bilal Ahmed Vani and team.
+                    All orders are inspected and boxed at our Main Market Kanelwan store by Bilal Ahmed Wani and team.
                   </p>
                 </div>
               )}
@@ -399,7 +413,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
           <div className="pt-4 border-t border-zinc-100 space-y-2.5 text-xs text-zinc-600">
             <div className="flex items-center gap-2.5">
               <Truck className="w-4 h-4 text-[#171717] shrink-0" />
-              <span>Pickup at Kanewan Store or Express Doorstep Delivery</span>
+              <span>Pickup at Kanelwan Store or Express Doorstep Delivery</span>
             </div>
             <div className="flex items-center gap-2.5">
               <RotateCcw className="w-4 h-4 text-[#171717] shrink-0" />
@@ -407,7 +421,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
             </div>
             <div className="flex items-center gap-2.5">
               <Shield className="w-4 h-4 text-[#171717] shrink-0" />
-              <span>Verified genuine pair inspected by Bilal Ahmed Vani</span>
+              <span>Verified genuine pair inspected by Bilal Ahmed Wani</span>
             </div>
           </div>
         </div>

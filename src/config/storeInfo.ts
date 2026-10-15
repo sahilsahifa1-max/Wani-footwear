@@ -1,19 +1,19 @@
 export const STORE_INFO = {
-  brandName: 'Vani Footwear',
-  ownerName: 'Bilal Ahmed Vani',
+  brandName: 'Wani Footwear',
+  ownerName: 'Bilal Wani',
   tagline: 'Every Step. Your Style.',
-  subheadline: 'From tiny first steps to everyday essentials. Discover footwear for every age, every occasion, and every budget at Vani Footwear.',
+  subheadline: 'From tiny first steps to everyday essentials. Discover footwear for every age, every occasion, and every budget at Wani Footwear.',
   
   location: {
-    address: 'Main Market, Kanewan',
-    locality: 'Kanewan',
+    address: 'Main Market, Kanelwan',
+    locality: 'Kanelwan',
     district: 'Anantnag',
     region: 'Jammu & Kashmir',
     postalCode: '192124',
     country: 'India',
-    displayLocation: 'Kanewan, Jammu & Kashmir',
-    mapUrl: 'https://maps.google.com/?q=Kanewan+Jammu+and+Kashmir+India',
-    embedMapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13264.498877526715!2d75.148722!3d33.731144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1f0e4b86f5c87%3A0x63328e9f56e9196b!2sKanewan%2C%20Jammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1713100000000!5m2!1sen!2sin'
+    displayLocation: 'Kanelwan, Jammu & Kashmir',
+    mapUrl: 'https://maps.google.com/?q=Kanelwan+Jammu+and+Kashmir+India',
+    embedMapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13264.498877526715!2d75.148722!3d33.731144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1f0e4b86f5c87%3A0x63328e9f56e9196b!2sKanelwan%2C%20Jammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1713100000000!5m2!1sen!2sin'
   },
 
   hours: {
@@ -24,15 +24,15 @@ export const STORE_INFO = {
   },
 
   contact: {
-    phone: '+91 94190 28419', // Representative store phone line
+    phone: '+91 94190 28419',
     displayPhone: '+91 94190 28419',
-    email: 'contact@vanifootwear.in',
-    whatsapp: 'https://wa.me/919419028419?text=Hello%20Vani%20Footwear,%20I%20have%20an%20inquiry%20about%20your%20shoes'
+    email: 'contact@wanifootwear.in',
+    whatsapp: 'https://wa.me/919419028419?text=Hello%20Wani%20Footwear,%20I%20have%20an%20inquiry%20about%20your%20shoes'
   },
 
   socials: {
-    instagram: 'https://instagram.com/vanifootwear',
-    facebook: 'https://facebook.com/vanifootwear'
+    instagram: 'https://instagram.com/wanifootwear',
+    facebook: 'https://facebook.com/wanifootwear'
   },
 
   fulfilment: {
@@ -56,7 +56,7 @@ export const STORE_INFO = {
   },
 
   policies: {
-    returns: '7-day hassle-free exchange at our Kanewan store or via return courier for unworn pairs.',
+    returns: '7-day hassle-free exchange at our Kanelwan store or via return courier for unworn pairs.',
     warranty: '100% genuine quality assurance on all soles, stitching, and materials.',
     payment: 'Cash on delivery, Pay at store pickup, and direct UPI / Card supported.'
   }

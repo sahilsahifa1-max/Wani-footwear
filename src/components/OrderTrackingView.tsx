@@ -40,12 +40,12 @@ export const OrderTrackingView: React.FC<OrderTrackingViewProps> = ({
   };
 
   const steps: { status: OrderStatus; label: string; desc: string }[] = [
-    { status: 'Confirmed', label: 'Order Confirmed', desc: 'Verified and queued in Kanewan store' },
-    { status: 'Processing', label: 'Packaging & Sizing Check', desc: 'Inspected by Bilal Ahmed Vani & team' },
+    { status: 'Confirmed', label: 'Order Confirmed', desc: 'Verified and queued in Kanelwan store' },
+    { status: 'Processing', label: 'Packaging & Sizing Check', desc: 'Inspected by Bilal Ahmed Wani & team' },
     {
       status: searchedOrder?.fulfilmentType === 'store-pickup' ? 'Ready for pickup' : 'Shipped',
       label: searchedOrder?.fulfilmentType === 'store-pickup' ? 'Ready for Pickup' : 'Dispatched',
-      desc: searchedOrder?.fulfilmentType === 'store-pickup' ? 'Waiting at Kanewan Store (8 AM–8 PM)' : 'In transit'
+      desc: searchedOrder?.fulfilmentType === 'store-pickup' ? 'Waiting at Kanelwan Store (8 AM–8 PM)' : 'In transit'
     },
     { status: 'Delivered', label: 'Fulfilled / Delivered', desc: 'Received by customer' }
   ];
@@ -195,11 +195,11 @@ export const OrderTrackingView: React.FC<OrderTrackingViewProps> = ({
               <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200 text-xs text-zinc-700 flex items-start gap-3">
                 <Store className="w-5 h-5 text-[#171717] shrink-0 mt-0.5" />
                 <div className="space-y-1">
-                  <span className="font-bold text-zinc-900 block">Kanewan Hub Update:</span>
+                  <span className="font-bold text-zinc-900 block">Kanelwan Hub Update:</span>
                   <p>
                     {searchedOrder.fulfilmentType === 'store-pickup'
-                      ? 'Your footwear is prepared at Vani Footwear, Main Market Kanewan. You can visit any time between 8:00 AM and 8:00 PM.'
-                      : 'Your shipment is coordinated from our Kanewan facility. Inquiries: +91 94190 28419.'}
+                      ? 'Your footwear is prepared at Wani Footwear, Main Market Kanelwan. You can visit any time between 8:00 AM and 8:00 PM.'
+                      : 'Your shipment is coordinated from our Kanelwan facility. Inquiries: +91 94190 28419.'}
                   </p>
                 </div>
               </div>

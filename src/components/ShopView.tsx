@@ -116,7 +116,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-zinc-500">
-              <span>Vani Footwear Catalogue</span>
+              <span>Wani Footwear Catalogue</span>
               <span>·</span>
               <span className="text-zinc-800 font-semibold">{filteredProducts.length} Pairs Available</span>
             </div>
@@ -124,7 +124,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
               Footwear For Every Step
             </h1>
             <p className="text-sm sm:text-base text-zinc-600 max-w-2xl leading-relaxed">
-              Explore performance runners, artisan leather boots, school shoes, and soothing comfort slippers. Inspected and curated at our Kanewan shop in Jammu & Kashmir.
+              Explore performance runners, artisan leather boots, school shoes, and soothing comfort slippers. Inspected and curated at our Kanelwan shop in Jammu & Kashmir.
             </p>
           </div>
 

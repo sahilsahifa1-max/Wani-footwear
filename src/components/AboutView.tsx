@@ -49,10 +49,10 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
       <div className={`relative w-full ${aspectRatio} rounded-3xl overflow-hidden bg-gradient-to-br from-zinc-900 via-zinc-800 to-black p-8 flex flex-col justify-between border border-zinc-700 shadow-md text-white`}>
         <div className="flex items-center justify-between">
           <span className="w-8 h-8 rounded-full bg-[#F5F000] text-[#171717] flex items-center justify-center font-bold text-xs">
-            VF
+            WF
           </span>
           <span className="text-[11px] font-mono tracking-widest text-zinc-400 uppercase">
-            Kanewan, J&K
+            Kanelwan, J&K
           </span>
         </div>
 
@@ -75,7 +75,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-xs font-mono text-[#F5F000] uppercase tracking-wider">
             <span>Our Heritage & Purpose</span>
             <span>·</span>
-            <span className="text-white">Kanewan, Jammu & Kashmir</span>
+            <span className="text-white">Kanelwan, Jammu & Kashmir</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight uppercase max-w-4xl leading-[1.05]">
@@ -83,7 +83,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
           </h1>
 
           <p className="text-lg sm:text-xl text-zinc-300 max-w-3xl leading-relaxed font-normal">
-            Vani Footwear brings together footwear for different ages, styles, occasions, and budgets, with a focus on helping every customer find the right pair.
+            Wani Footwear brings together footwear for different ages, styles, occasions, and budgets, with a focus on helping every customer find the right pair.
           </p>
 
           <div className="pt-4 flex flex-wrap gap-4">
@@ -100,13 +100,13 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
               onClick={onVisitStore}
               className="px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider rounded-xl transition-colors cursor-pointer font-display"
             >
-              Visit Our Kanewan Store
+              Visit Our Kanelwan Store
             </button>
           </div>
         </div>
       </section>
 
-      {/* Narrative Section: Bilal Ahmed Vani & Kanewan Store */}
+      {/* Narrative Section: Bilal Ahmed Wani & Kanelwan Store */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Text */}
@@ -116,16 +116,16 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
                 The Founder’s Journey
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-zinc-900 tracking-tight">
-                Founded by Bilal Ahmed Vani
+                Founded by Bilal Ahmed Wani
               </h2>
             </div>
 
             <div className="space-y-4 text-base text-zinc-600 leading-relaxed">
               <p>
-                In the historic market of Kanewan, Jammu & Kashmir, Vani Footwear was built upon a straightforward principle: quality footwear should be accessible to everyone in our community, from toddlers taking their very first steps to elders seeking pain-free morning walks.
+                In the historic market of Kanelwan, Jammu & Kashmir, Wani Footwear was built upon a straightforward principle: quality footwear should be accessible to everyone in our community, from toddlers taking their very first steps to elders seeking pain-free morning walks.
               </p>
               <p>
-                Founder <strong>Bilal Ahmed Vani</strong> recognized that too often, customers had to choose between inflated designer prices or poorly made footwear that broke down after weeks. He established Vani Footwear to curate genuine, hard-wearing materials that withstand Kashmir’s rugged terrain and seasonal changes.
+                Founder <strong>Bilal Ahmed Wani</strong> recognized that too often, customers had to choose between inflated designer prices or poorly made footwear that broke down after weeks. He established Wani Footwear to curate genuine, hard-wearing materials that withstand Kashmir’s rugged terrain and seasonal changes.
               </p>
               <p>
                 Today, our shop stands open seven days a week from 8:00 AM to 8:00 PM, greeting neighbors and travelers alike with personalized size fittings, transparent advice, and dependable quality.
@@ -156,8 +156,8 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
           <div className="lg:col-span-5">
             {renderImageSlot(
               aboutImages.ownerPortrait,
-              'Bilal Ahmed Vani, Founder of Vani Footwear',
-              'Founder: Bilal Ahmed Vani',
+              'Bilal Ahmed Wani, Founder of Wani Footwear',
+              'Founder: Bilal Ahmed Wani',
               'aspect-[4/5]'
             )}
           </div>
@@ -173,7 +173,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
                 Visual Archive
               </span>
               <h2 className="text-3xl font-extrabold font-display text-zinc-900">
-                Our Kanewan Store Experience
+                Our Kanelwan Store Experience
               </h2>
             </div>
             <span className="text-xs font-mono text-zinc-500">
@@ -186,16 +186,16 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
             <div>
               {renderImageSlot(
                 aboutImages.storefront,
-                'Vani Footwear Storefront in Kanewan',
-                'Kanewan Storefront'
+                'Wani Footwear Storefront in Kanelwan',
+                'Kanelwan Storefront'
               )}
-              <p className="text-xs text-zinc-500 mt-2 font-mono">Exterior · Main Market Kanewan</p>
+              <p className="text-xs text-zinc-500 mt-2 font-mono">Exterior · Main Market Kanelwan</p>
             </div>
 
             <div>
               {renderImageSlot(
                 aboutImages.interior,
-                'Vani Footwear Store Interior',
+                'Wani Footwear Store Interior',
                 'Curated Interior & Displays'
               )}
               <p className="text-xs text-zinc-500 mt-2 font-mono">Interior · Organized Size Shelving</p>
@@ -204,7 +204,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
             <div>
               {renderImageSlot(
                 aboutImages.footwearDisplay,
-                'Footwear Showcase at Vani Footwear',
+                'Footwear Showcase at Wani Footwear',
                 'Footwear Showcase'
               )}
               <p className="text-xs text-zinc-500 mt-2 font-mono">Close-up · Premium Suede & Leather</p>
@@ -217,7 +217,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto space-y-3 mb-16">
           <span className="text-xs font-mono uppercase tracking-widest text-[#171717] bg-[#F5F000] px-3 py-1 rounded-full font-bold">
-            The Vani Promise
+            The Wani Promise
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-zinc-900">
             Four Commitments to Every Customer
@@ -251,7 +251,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
             </span>
             <h3 className="text-base font-bold font-display text-zinc-900">7-Day Local Exchange</h3>
             <p className="text-xs text-zinc-600 leading-relaxed">
-              Exchange unworn shoes easily at our Kanewan store or by mail if the fit isn’t completely comfortable.
+              Exchange unworn shoes easily at our Kanelwan store or by mail if the fit isn’t completely comfortable.
             </p>
           </div>
 
@@ -261,7 +261,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onExploreShop, onVisitStor
             </span>
             <h3 className="text-base font-bold font-display text-zinc-900">Community Respect</h3>
             <p className="text-xs text-zinc-600 leading-relaxed">
-              Bilal Ahmed Vani and team take personal responsibility for every shoe that leaves our door.
+              Bilal Ahmed Wani and team take personal responsibility for every shoe that leaves our door.
             </p>
           </div>
         </div>

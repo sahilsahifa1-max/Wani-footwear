@@ -21,12 +21,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAdmin }) => {
           <div className="lg:col-span-5 space-y-5">
             <div className="flex items-center gap-2">
               <span className="text-3xl font-black tracking-tight font-display uppercase">
-                Vani<span className="text-white">.</span><span className="bg-[#F5F000] text-[#171717] px-1.5 ml-0.5 rounded-sm">Footwear</span>
+                Wani<span className="text-white">.</span><span className="bg-[#F5F000] text-[#171717] px-1.5 ml-0.5 rounded-sm">Footwear</span>
               </span>
             </div>
 
             <p className="text-sm text-zinc-400 max-w-sm leading-relaxed">
-              Founded and managed by Bilal Ahmed Vani in Kanewan, Jammu & Kashmir. Providing comfortable, stylish, and high-quality footwear for all ages and occasions.
+              Founded and managed by Bilal Ahmed Wani in Kanelwan, Jammu & Kashmir. Providing comfortable, stylish, and high-quality footwear for all ages and occasions.
             </p>
 
             <div className="space-y-2 text-xs font-mono text-zinc-300">
@@ -122,7 +122,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAdmin }) => {
                   onClick={() => onNavigate('contact')}
                   className="hover:text-[#F5F000] transition-colors cursor-pointer"
                 >
-                  Visit Kanewan Store
+                  Visit Kanelwan Store
                 </button>
               </li>
               <li>
@@ -140,7 +140,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAdmin }) => {
                   onClick={onOpenAdmin}
                   className="hover:text-[#F5F000] transition-colors cursor-pointer text-[#F5F000]"
                 >
-                  Bilal Ahmed Vani Portal
+                  Bilal Ahmed Wani Portal
                 </button>
               </li>
             </ul>
@@ -152,7 +152,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAdmin }) => {
               Local Guarantee
             </h4>
             <div className="p-4 rounded-2xl bg-zinc-900 border border-zinc-800 text-xs text-zinc-400 space-y-2">
-              <span className="font-bold text-white block">Kanewan Community Shop</span>
+              <span className="font-bold text-white block">Kanelwan Community Shop</span>
               <p>Serving Jammu & Kashmir with 100% genuine footwear inspections.</p>
             </div>
 
@@ -171,7 +171,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAdmin }) => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-400">
           <div>
-            © {new Date().getFullYear()} Vani Footwear. Owned by Bilal Ahmed Vani. Main Market Kanewan, Jammu & Kashmir.
+            © {new Date().getFullYear()} Wani Footwear. Owned by Bilal Ahmed Wani. Main Market Kanelwan, Jammu & Kashmir.
           </div>
           <div className="flex items-center gap-4">
             <span>7-Day Store Exchange</span>

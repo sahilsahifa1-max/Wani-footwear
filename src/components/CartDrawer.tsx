@@ -98,7 +98,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   Your shopping bag is empty
                 </h3>
                 <p className="text-xs text-zinc-500 max-w-xs">
-                  Discover high-quality footwear crafted for every step at Vani Footwear Kanewan.
+                  Discover high-quality footwear crafted for every step at Wani Footwear Kanelwan.
                 </p>
                 <button
                   type="button"
@@ -115,11 +115,25 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   className="bg-white rounded-2xl p-4 border border-zinc-200/80 shadow-sm flex gap-4 items-center"
                 >
                   {/* Thumbnail */}
-                  <div className="w-20 h-20 rounded-xl bg-zinc-100 p-2 flex items-center justify-center shrink-0">
-                    <ShoeSilhouette
-                      category={item.product.category}
-                      accentColor={item.product.colors.find((c) => c.name === item.selectedColor)?.hex || '#F5F000'}
-                    />
+                  <div className="w-20 h-20 rounded-xl bg-zinc-100 p-2 flex items-center justify-center shrink-0 overflow-hidden">
+                    {item.product.images && item.product.images.length > 0 ? (
+                      <img
+                        src={item.product.images[0]}
+                        alt={item.product.name}
+                        className="w-full h-full object-contain filter drop-shadow-sm"
+                        onError={(e) => {
+                          (e.currentTarget as HTMLElement).style.display = 'none';
+                          const fallback = (e.currentTarget.parentElement as HTMLElement)?.querySelector('.cart-fallback');
+                          if (fallback) (fallback as HTMLElement).style.display = 'block';
+                        }}
+                      />
+                    ) : null}
+                    <div className={`w-full h-full ${item.product.images && item.product.images.length > 0 ? 'cart-fallback hidden' : 'block'}`}>
+                      <ShoeSilhouette
+                        category={item.product.category}
+                        accentColor={item.product.colors.find((c) => c.name === item.selectedColor)?.hex || '#F5F000'}
+                      />
+                    </div>
                   </div>
 
                   {/* Details */}
@@ -201,7 +215,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       <Store className="w-3.5 h-3.5 text-[#F5F000]" />
                       <span className="text-xs font-bold">Store Pickup</span>
                     </div>
-                    <div className="text-[11px] text-zinc-400 font-mono mt-0.5">Kanewan (FREE)</div>
+                    <div className="text-[11px] text-zinc-400 font-mono mt-0.5">Kanelwan (FREE)</div>
                   </button>
 
                   <button
@@ -280,7 +294,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 )}
 
                 <div className="flex justify-between">
-                  <span>Fulfilment ({fulfilmentType === 'store-pickup' ? 'Kanewan Pickup' : 'Delivery'})</span>
+                  <span>Fulfilment ({fulfilmentType === 'store-pickup' ? 'Kanelwan Pickup' : 'Delivery'})</span>
                   <span className="font-mono tabular-nums">
                     {totals.fulfilmentFee === 0 ? 'FREE' : `₹${totals.fulfilmentFee}`}
                   </span>

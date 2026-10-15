@@ -40,7 +40,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
     email: '',
     address: '',
     locality: '',
-    city: 'Kanewan',
+    city: 'Kanelwan',
     state: 'Jammu & Kashmir',
     pincode: '192124',
     notes: ''
@@ -126,7 +126,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
           {
             status: 'Confirmed',
             timestamp: new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }),
-            note: 'Order placed and verified by Vani Footwear system.'
+            note: 'Order placed and verified by Wani Footwear system.'
           }
         ]
       };
@@ -153,7 +153,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
           Secure Checkout
         </h1>
         <p className="text-sm text-zinc-500 mt-1">
-          Complete your order with Vani Footwear, Kanewan, Jammu & Kashmir.
+          Complete your order with Wani Footwear, Kanelwan, Jammu & Kashmir.
         </p>
       </div>
 
@@ -186,7 +186,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
               >
                 <Store className="w-5 h-5 text-[#F5F000] mb-2" />
                 <div className="text-sm font-bold">Store Pickup</div>
-                <div className="text-xs text-zinc-400 font-mono mt-1">Kanewan Store (FREE)</div>
+                <div className="text-xs text-zinc-400 font-mono mt-1">Kanelwan Store (FREE)</div>
                 <div className="text-[11px] text-[#F5F000] mt-2">Ready in 2 hours</div>
               </button>
 
@@ -234,8 +234,8 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
             {fulfilmentType === 'store-pickup' && (
               <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200/80 text-xs text-amber-900 space-y-1">
                 <span className="font-bold block">Pickup Location:</span>
-                <span>Vani Footwear, Main Market, Kanewan, Jammu & Kashmir (Open 8:00 AM – 8:00 PM Daily).</span>
-                <span className="block text-amber-700">Owner Bilal Ahmed Vani will pack and reserve your pair upon confirmation.</span>
+                <span>Wani Footwear, Main Market, Kanelwan, Jammu & Kashmir (Open 8:00 AM – 8:00 PM Daily).</span>
+                <span className="block text-amber-700">Owner Bilal Ahmed Wani will pack and reserve your pair upon confirmation.</span>
               </div>
             )}
           </div>
@@ -331,7 +331,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
                     </label>
                     <input
                       type="text"
-                      placeholder="e.g. Kanewan / Anantnag"
+                      placeholder="e.g. Kanelwan / Anantnag"
                       value={form.locality}
                       onChange={(e) => handleInputChange('locality', e.target.value)}
                       className={`w-full px-4 py-2.5 rounded-xl border text-sm ${
@@ -379,7 +379,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
               </label>
               <textarea
                 rows={2}
-                placeholder="Special notes for Bilal Ahmed Vani or delivery driver..."
+                placeholder="Special notes for Bilal Ahmed Wani or delivery driver..."
                 value={form.notes}
                 onChange={(e) => handleInputChange('notes', e.target.value)}
                 className="w-full px-4 py-2 rounded-xl border border-zinc-200 bg-zinc-50 text-sm focus:bg-white"
@@ -465,8 +465,22 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
           <div className="max-h-60 overflow-y-auto space-y-3 pr-1">
             {items.map((item) => (
               <div key={item.id} className="flex items-center gap-3">
-                <div className="w-14 h-14 rounded-xl bg-zinc-100 p-1.5 shrink-0 flex items-center justify-center">
-                  <ShoeSilhouette category={item.product.category} accentColor="#F5F000" />
+                <div className="w-14 h-14 rounded-xl bg-zinc-100 p-1 shrink-0 flex items-center justify-center overflow-hidden">
+                  {item.product.images && item.product.images.length > 0 ? (
+                    <img
+                      src={item.product.images[0]}
+                      alt={item.product.name}
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLElement).style.display = 'none';
+                        const fallback = (e.currentTarget.parentElement as HTMLElement)?.querySelector('.checkout-fallback');
+                        if (fallback) (fallback as HTMLElement).style.display = 'block';
+                      }}
+                    />
+                  ) : null}
+                  <div className={`w-full h-full ${item.product.images && item.product.images.length > 0 ? 'checkout-fallback hidden' : 'block'}`}>
+                    <ShoeSilhouette category={item.product.category} accentColor="#F5F000" />
+                  </div>
                 </div>
                 <div className="flex-1 min-w-0">
                   <h4 className="text-xs font-bold text-zinc-900 truncate font-display">{item.product.name}</h4>
@@ -537,7 +551,7 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({
 
           <div className="pt-2 text-center text-xs text-zinc-400 flex items-center justify-center gap-1">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span>Guaranteed order directly from Vani Footwear Kanewan</span>
+            <span>Guaranteed order directly from Wani Footwear Kanelwan</span>
           </div>
         </div>
       </form>

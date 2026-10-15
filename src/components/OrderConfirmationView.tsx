@@ -43,7 +43,7 @@ export const OrderConfirmationView: React.FC<OrderConfirmationViewProps> = ({
           Thank You, {order.customer.fullName}
         </h1>
         <p className="text-sm text-zinc-600 max-w-lg mx-auto">
-          Your order has been recorded in our store ledger. Owner Bilal Ahmed Vani and our Kanewan team are preparing your footwear.
+          Your order has been recorded in our store ledger. Owner Bilal Ahmed Wani and our Kanelwan team are preparing your footwear.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export const OrderConfirmationView: React.FC<OrderConfirmationViewProps> = ({
         <div className="bg-[#171717] text-white p-6 sm:p-8 flex flex-wrap items-center justify-between gap-4">
           <div>
             <div className="text-xs font-mono text-[#F5F000] uppercase tracking-wider">
-              Official Vani Footwear Receipt
+              Official Wani Footwear Receipt
             </div>
             <div className="text-2xl font-bold font-mono tracking-tight mt-1">
               {order.id}
@@ -125,8 +125,8 @@ export const OrderConfirmationView: React.FC<OrderConfirmationViewProps> = ({
               </span>
               {order.fulfilmentType === 'store-pickup' ? (
                 <div>
-                  <p className="font-semibold">Vani Footwear</p>
-                  <p className="text-zinc-600">Main Market Kanewan, Jammu & Kashmir (192124)</p>
+                  <p className="font-semibold">Wani Footwear</p>
+                  <p className="text-zinc-600">Main Market Kanelwan, Jammu & Kashmir (192124)</p>
                   <p className="text-[#171717] font-semibold mt-1">Open 8:00 AM – 8:00 PM</p>
                 </div>
               ) : (
@@ -147,8 +147,22 @@ export const OrderConfirmationView: React.FC<OrderConfirmationViewProps> = ({
               {order.items.map((item) => (
                 <div key={item.id} className="py-3 flex items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-lg bg-zinc-100 p-1 flex items-center justify-center shrink-0">
-                      <ShoeSilhouette category={item.product.category} accentColor="#F5F000" />
+                    <div className="w-12 h-12 rounded-lg bg-zinc-100 p-1 flex items-center justify-center shrink-0 overflow-hidden">
+                      {item.product.images && item.product.images.length > 0 ? (
+                        <img
+                          src={item.product.images[0]}
+                          alt={item.product.name}
+                          className="w-full h-full object-contain"
+                          onError={(e) => {
+                            (e.currentTarget as HTMLElement).style.display = 'none';
+                            const fallback = (e.currentTarget.parentElement as HTMLElement)?.querySelector('.receipt-fallback');
+                            if (fallback) (fallback as HTMLElement).style.display = 'block';
+                          }}
+                        />
+                      ) : null}
+                      <div className={`w-full h-full ${item.product.images && item.product.images.length > 0 ? 'receipt-fallback hidden' : 'block'}`}>
+                        <ShoeSilhouette category={item.product.category} accentColor="#F5F000" />
+                      </div>
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-zinc-900 font-display">{item.product.name}</h4>

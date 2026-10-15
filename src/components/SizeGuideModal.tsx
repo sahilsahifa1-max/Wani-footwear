@@ -48,7 +48,7 @@ export const SizeGuideModal: React.FC<SizeGuideModalProps> = ({ isOpen, onClose 
           <div className="flex items-center gap-2">
             <Ruler className="w-5 h-5 text-[#171717]" />
             <h2 className="text-xl font-bold font-display text-zinc-900">
-              Vani Footwear Size Guide
+              Wani Footwear Size Guide
             </h2>
           </div>
           <button

@@ -75,14 +75,14 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
         <div className="p-6 bg-[#171717] text-white flex items-center justify-between border-b border-zinc-800">
           <div className="flex items-center gap-3">
             <span className="w-8 h-8 rounded-xl bg-[#F5F000] text-[#171717] font-bold text-xs flex items-center justify-center font-display">
-              VF
+              WF
             </span>
             <div>
               <h2 id="admin-title" className="text-lg font-bold font-display text-white">
-                Vani Footwear — Store Management Portal
+                Wani Footwear — Store Management Portal
               </h2>
               <div className="text-xs text-zinc-400 font-mono">
-                Store Owner: Bilal Ahmed Vani · Kanewan, J&K
+                Store Owner: Bilal Ahmed Wani · Kanelwan, J&K
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
           {activeTab === 'store' && (
             <div className="bg-white p-6 rounded-2xl border border-zinc-200 space-y-6">
               <h3 className="text-base font-bold font-display text-zinc-900">
-                Kanewan Store Identity & Information
+                Kanelwan Store Identity & Information
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">

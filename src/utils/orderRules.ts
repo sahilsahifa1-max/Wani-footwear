@@ -11,7 +11,7 @@ export function isValidIndianPhone(phone: string): boolean {
 }
 
 /**
- * Validate standard 6-digit Indian PIN code (e.g., 192124 for Kanewan)
+ * Validate standard 6-digit Indian PIN code (e.g., 192124 for Kanelwan)
  */
 export function isValidIndianPincode(pincode: string): boolean {
   if (!pincode) return false;
@@ -20,12 +20,12 @@ export function isValidIndianPincode(pincode: string): boolean {
 }
 
 /**
- * Generate a distinctive, sequential or pseudo-random order ID (e.g. VF-2026-7842)
+ * Generate a distinctive, sequential or pseudo-random order ID (e.g. WF-2026-7842)
  */
 export function generateOrderId(): string {
   const year = new Date().getFullYear();
   const randomSuffix = Math.floor(1000 + Math.random() * 9000);
-  return `VF-${year}-${randomSuffix}`;
+  return `WF-${year}-${randomSuffix}`;
 }
 
 /**
